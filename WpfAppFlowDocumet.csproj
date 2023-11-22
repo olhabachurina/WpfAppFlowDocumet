@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="arcadia.jpg" />
+    <None Remove="bio.mp4" />
+    <None Remove="bulvar.jpg" />
+    <None Remove="Colona.jpg" />
+    <None Remove="duk.jpg" />
+    <None Remove="mayk.jpg" />
+    <None Remove="Opera.jpg" />
+    <None Remove="passag.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LibVLCSharp.WPF" Version="3.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="arcadia.jpg" />
+    <Resource Include="bulvar.jpg" />
+    <Resource Include="Colona.jpg" />
+    <Resource Include="duk.jpg" />
+    <Resource Include="mayk.jpg" />
+    <Resource Include="Opera.jpg" />
+    <Resource Include="passag.jpg" />
+    <Resource Include="bio.mp4" />
+  </ItemGroup>
+
+</Project>

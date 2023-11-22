@@ -1,0 +1,88 @@
+﻿<Window x:Class="WpfAppFlowDocumet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppFlowDocumet"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <FlowDocumentReader Name="flowDocumentReader">
+                <FlowDocument>
+                    <!-- Страница 1 -->
+                    <Section>
+                        <BlockUIContainer>
+                            <TextBlock Text="Одесса-жемчужина у моря" FontSize="18" FontWeight="Bold" />
+                        </BlockUIContainer>
+                        <Paragraph>
+                            Добро пожаловать в Одессу, чарующий город на берегу Черного моря.
+                        Одесса – это город с уникальной атмосферой, наполненный романтикой,
+                        творчеством и красотой во всех ее проявлениях, благодаря чему слава
+                        об этом удивительном месте распространилась далеко за пределы нашей страны.
+                        </Paragraph>
+                        <BlockUIContainer>
+                            <Image Source="mayk.jpg" />
+                        </BlockUIContainer>
+                        <Paragraph>
+                            С каждым годом Одессу посещает все большее количество туристов,
+                        жаждущих отдохнуть на превосходных пляжах, ощутить непередаваемый одесский колорит
+                        и увидеть архитектурные, исторические и природные достопримечательности
+                        </Paragraph>
+                        <BlockUIContainer>
+                            <Image Source="Opera.jpg" />
+                        </BlockUIContainer>
+                    </Section>
+                    <Section>
+                        <BlockUIContainer>
+                            <TextBlock Text="Архитектура" FontSize="20" FontWeight="Bold" />
+                        </BlockUIContainer>
+                        <Paragraph>
+                            Одесса славится своей уникальной архитектурой, которая сочетает в себе разнообразные стили и эпохи.
+                        </Paragraph>
+                        <BlockUIContainer>
+                            <Image Source="passag.jpg" />
+                        </BlockUIContainer>
+                        <Paragraph>
+                            Здесь вы найдете старинные здания, площади и улицы, каждая из которых рассказывает свою увлекательную историю.
+                        </Paragraph>
+                        <BlockUIContainer>
+                            <Image Source="Colona.jpg" />
+                        </BlockUIContainer>
+                    </Section>
+                    <Section>
+                        <BlockUIContainer>
+                            <TextBlock Text="Приморский бульвар и Черное море" FontSize="20" FontWeight="Bold" />
+                        </BlockUIContainer>
+                        <Paragraph>
+                            Приморский бульвар очаровывает не только своей красотой, но и славится своей архитектурой,
+                        да и столетние каштаны и платаны придутся по сердцу всем, кто приехал в Одессу на отдых.
+                        Что касается архитектуры, то сразу рекомендуем обратить внимание на удивительный архитектурный
+                        ансамбль дворцов вдоль всего бульвара, который посередине прерывается полукруглым
+                        сдвоенным зданием. В центре бульвара находится знаменитый памятник Дюку.
+                        </Paragraph>
+                        <BlockUIContainer>
+                            <Image Source="duk.jpg"/>
+                        </BlockUIContainer>
+
+                        <Paragraph>а рядом с ним Потемкинская лестница.   
+                        Прогуливаясь по Приморскому бульвару, вы сможете насладиться потрясающими видами на Черное море.</Paragraph>
+                        <BlockUIContainer>
+                            <Image Source="bulvar.jpg"/>
+                        </BlockUIContainer>
+                        
+                        <Paragraph>
+                            Это идеальное место для отдыха, встреч с друзьями и наслаждения морским бризом.
+                        </Paragraph>
+                        <BlockUIContainer>
+                            <Image Source="arcadia.jpg"/>
+                        </BlockUIContainer>
+                        <BlockUIContainer>
+                            <MediaElement Source="bio.mp4" Width="400" Height="300" />
+                        </BlockUIContainer>
+                    </Section>
+                </FlowDocument>
+            </FlowDocumentReader>
+        </ScrollViewer>
+    </Grid>
+</Window>
